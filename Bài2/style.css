@@ -1,0 +1,50 @@
+/* Đổi nền máy tính thành đen */
+.calculator {
+    width: 280px;
+    background: #202020;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: none;
+}
+
+#calc-display {
+    background: transparent;
+    color: #ffffff;
+    text-align: right;
+    padding: 20px 10px;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    border: none;
+}
+
+/* Khoảng cách các nút rất nhỏ, tạo viền chìm */
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px; 
+}
+
+/* Nút bấm xám đen, chữ trắng thanh mảnh */
+.btn {
+    padding: 20px 10px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #ffffff;
+    background: #3b3b3b;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.btn:hover {
+    background: #4b4b4b;
+}
+
+/* Cho phím số 0 và Clear rộng ra */
+.btn.clear { grid-column: span 3; background: #5c3a21; }
+.btn.clear:hover { background: #7a4a28; }
+.btn.equal { grid-column: span 3; background: #2a4d3e; }
+.btn.equal:hover { background: #3b6b55; }
