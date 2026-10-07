@@ -1,0 +1,135 @@
+/* Khung bao toàn bộ CV */
+.app-container {
+  max-width: 650px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Nền tối giữ đúng như bài 1 ban đầu */
+.app-container.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #555555;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.dark-mode header {
+  border-bottom-color: #555555;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+.greeting-text {
+  font-style: italic;
+  margin: 0 0 12px 0;
+  color: #555555;
+}
+
+.dark-mode .greeting-text {
+  color: #cccccc;
+}
+
+#color-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.dark-mode #color-btn {
+  background-color: #4f4f4f;
+  color: #ffffff;
+  border-color: #777777;
+}
+
+/* Component Section */
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px dashed #dddddd;
+}
+
+.dark-mode .section {
+  border-bottom-color: #555555;
+}
+
+.section h2 {
+  font-size: 17px;
+  color: #0b61a4;
+  margin: 0 0 10px 0;
+}
+
+.dark-mode .section h2 {
+  color: #63b3ed;
+}
+
+.section p {
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+/* Danh sách kỹ năng */
+ul {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* Danh sách dự án */
+.project-item {
+  background-color: #fafafa;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+.dark-mode .project-item {
+  background-color: #3d3d3d;
+  border-color: #555555;
+}
+
+.project-item h3 {
+  font-size: 15px;
+  margin: 0 0 6px 0;
+}
+
+.project-item p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dark-mode footer {
+  border-top-color: #555555;
+}
